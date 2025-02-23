@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mother's Day Celebration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffebcc;
+      color: #333;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background-color: #2b2b2b;
+      color: #f1f1f1;
+    }
+
+    header {
+      background: linear-gradient(135deg, #9c1f1f, #ff4c35);
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+      border-bottom: 5px solid #ff6f61;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    .heart {
+      color: #ff4c35;
+    }
+
+    nav {
+      background-color: #ff4c35;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00f;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    body.dark-mode section {
+      background-color: #333;
+      color: #f1f1f1;
+    }
+
+    h2 {
+      color: #ff4c35;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #ff6f61;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%; /* Make images responsive */
+      max-width: 400px; /* Set maximum size */
+      height: 250px; /* Set a fixed height */
+      object-fit: cover; /* Ensure the image fits within the container without distortion */
+    }
+
+    body.dark-mode .heart {
+      color: #f9a8d4;
+    }
+
+    /* Adjusted styles for dark mode */
+    body.dark-mode nav {
+      background-color: #444;
+    }
+
+    body.dark-mode nav ul li a {
+      color: #f1f1f1;
+    }
+
+    body.dark-mode nav ul li a:hover {
+      color: #ff4c35;
+    }
+
+    body.dark-mode footer {
+      background-color: #444;
+    }
+
+    .trivia {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark-mode .trivia {
+      background-color: #333;
+      color: #f1f1f1;
+    }
+
+    .quiz-button {
+      background-color: #ff6f61;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .quiz-button:hover {
+      background-color: #ff4c35;
+    }
+
+    .expanded-quiz {
+      display: none;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #ffebcc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    body.dark-mode .expanded-quiz {
+      background-color: #444;
+      color: #f1f1f1;
+    }
+
+    .expanded-quiz.visible {
+      display: block;
+    }
+
+    .bonus-info {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark-mode .bonus-info {
+      background-color: #444;
+      color: #f1f1f1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span class="heart">Mother's Day Celebration</span></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#history">History</a></li>
+      <li><a href="#why">Why It Happens</a></li>
+      <li><a href="#celebration">Celebration</a></li>
+      <li><a href="#famous-events">Famous Events</a></li>
+      <li><button onclick="toggleDarkMode()">Toggle Dark Mode</button></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="history">
+      <h2>History of Mother's Day</h2>
+      <p>Mother's Day has a rich history, celebrated globally to honor mothers and their unconditional love. The idea of honoring mothers dates back to ancient Greece, but it wasn't until the early 20th century that Mother's Day as we know it today became widely recognized.</p>
+      <p>The first modern Mother's Day was celebrated in 1908, thanks to Anna Jarvis, who campaigned for a national day to honor mothers after her own mother's passing. By 1914, President Woodrow Wilson officially declared the second Sunday in May as Mother's Day in the United States. Other countries soon followed suit, but some, like Bulgaria, celebrate it on different days.</p>
+      <img src="https://media.istockphoto.com/id/2049049704/photo/mothers-day.jpg?s=2048x2048&w=is&k=20&c=JJavuB4Gg4n2vJTt-zQFCIUrB3j4CgJx7mYF5vj6YRc=">
+    </section>
+
+    <section id="why">
+      <h2>Why Celebrate Mother's Day?</h2>
+      <p>Mother’s Day is a time to show gratitude, love, and appreciation to all mothers, grandmothers, and mother figures. It’s about acknowledging the hard work, sacrifice, and devotion that mothers put into raising and nurturing their children. From teaching life lessons to providing emotional support, mothers are essential pillars in the family unit.</p>
+      <p>In many cultures, Mother’s Day is not just about gifts and flowers but about honoring the role of women in society. It’s a day to reflect on the love and care mothers provide every single day.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTshDXNHCazRqpIpqb76KtdGNSTfozp_2FwTw&s" alt="Flowers for Mother's Day">
+    </section>
+
+    <section id="celebration">
+      <h2>How People Celebrate Mother's Day</h2>
+      <p>Mother's Day is celebrated in various ways around the world. Common ways to celebrate include:</p>
+      <ul>
+        <li>Giving gifts such as flowers, jewelry, or handmade cards.</li>
+        <li>Taking mothers out for a special meal or making breakfast in bed.</li>
+        <li>Spending quality time with mothers and expressing gratitude.</li>
+        <li>Some countries hold special services, parades, and community gatherings to honor mothers.</li>
+      </ul>
+      <p>March 3rd specifically is a significant date for some cultures and countries, where Mother’s Day is recognized on this day due to cultural or religious traditions.</p>
+      <img src="https://media.istockphoto.com/id/802835576/photo/beautiful-senior-mother-and-daughter-eating-lunch-together-at-restaurant.jpg?s=612x612&w=0&k=20&c=J-Mhled_9lZDrpX7UE0kWhCDcHzgnkLkuFNNnPSBGP4=" alt="Mother's Day Dinner">
+    </section>
+
+    <section id="famous-events">
+      <h2>Famous Events on Mother's Day</h2>
+      <p>While Mother's Day is a day of celebration, it’s also a time for reflection. Here are a few famous events tied to Mother’s Day:</p>
+      <ul>
+        <li>The first official Mother's Day celebrated on May 10, 1908, at the Methodist Church in Grafton, West Virginia.</li>
+        <li>In the U.K., Mothering Sunday, which is a tradition rooted in Christianity, is celebrated on the fourth Sunday of Lent, often coinciding with Mother's Day in other countries.</li>
+        <li>Mother's Day is recognized on different days in various parts of the world, including the 3rd of March in countries like Bulgaria.</li>
+      </ul>
+      <img src="https://media.istockphoto.com/id/180808602/photo/american-soldier-with-mothers-day-gift.jpg?s=612x612&w=0&k=20&c=gVsYsY_8Cd3IIGMdyEPdQ0TLMoEm9zuzeWQLtsaoCBc=" alt="Mother's Day Military Celebration">
+    </section>
+
+    <div class="trivia">
+      <h3>Fun Trivia</h3>
+      <p>Did you know that Mother's Day is one of the busiest days of the year for restaurants?</p>
+      <button class="quiz-button" onclick="toggleQuiz()">Take the Quiz</button>
+      <div id="quiz" class="expanded-quiz">
+        <p><strong>Question:</strong> In which year was Mother's Day officially recognized in the United States?</p>
+        <p><strong>Answer:</strong> 1914</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    function toggleQuiz() {
+      var quiz = document.getElementById('quiz');
+      quiz.classList.toggle('visible');
+    }
+  </script>
+
+</body>
+</html>
